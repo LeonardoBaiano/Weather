@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "clima-tempo"
+    }
+  },
+  "defaultProject": "clima-tempo",
+  "cli": {
+    "analytics": false
+  }
 }
