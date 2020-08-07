@@ -9,6 +9,7 @@
 
 # dependencies
 /node_modules
+/apoio
 
 # profiling files
 chrome-profiler-events*.json
