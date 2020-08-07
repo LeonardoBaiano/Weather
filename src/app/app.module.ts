@@ -8,13 +8,18 @@ import { WeatherComponent } from './modules/weather/weather.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GaleriaComponent } from './components/galeria/galeria.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { RouterModule, PreloadAllModules } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    GaleriaComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
