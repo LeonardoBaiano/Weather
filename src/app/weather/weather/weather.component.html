@@ -1,3 +1,27 @@
-<di>
-    {{ info.request.type }}
-</di>
+
+<div class="forecast-table">
+    <div class="container">
+        <div class="forecast-container">
+            <div class="today forecast">
+                <div class="forecast-header">
+                    <div class="day">Monday</div>                    
+                    <div class="day"> {{ date }}</div>
+                    <div class="date">6 Oct</div>
+                </div> <!-- .forecast-header -->
+                <div class="forecast-content">
+                    <div class="location"> {{ info.request.query }}</div>
+                    <div class="degree">
+                        <div class="num">{{ info.current.temperature }}<sup>o</sup>C</div>
+                        <div class="forecast-icon">                            
+                            <img [src]="info.current.weather_icons">
+                        </div>	
+                    </div>
+                    <span><img src="images/icon-umberella.png" alt="">20%</span>
+                    <span><img src="/src/assets/icon-wind.png" alt="">{{ info.current.wind_speed }}km/h</span>
+                    <span><img src="/src/assets/icon-compass.png" alt=""> {{ info.current.wind_dir }}</span>                    
+
+                </div>
+            </div>                    
+        </div>
+    </div>
+</div>
