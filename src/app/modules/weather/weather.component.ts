@@ -1,5 +1,5 @@
-import { Weather } from './../../models/weather.model';
-import { WeatherService } from './../../weather.service';
+import { Weather } from '../../models/weather.model';
+import { WeatherService } from '../../weather.service';
 import { Component, OnInit } from '@angular/core';
 import { Subscriber } from 'rxjs';
 
