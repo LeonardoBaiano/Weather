@@ -19,7 +19,7 @@ export class WeatherComponent implements OnInit {
 
   constructor(private weatherService: WeatherService) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {       
     this.getInfo();
     this.init();
     //this.getDatas();
@@ -33,7 +33,7 @@ export class WeatherComponent implements OnInit {
         console.log(this.info);
       }
     );
-  }
+  }  
 
   init() {
     this.info.location = {};
