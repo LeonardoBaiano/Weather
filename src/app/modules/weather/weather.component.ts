@@ -12,34 +12,34 @@ export class WeatherComponent implements OnInit {
 
   info = new Weather();
   location: any;
-  current: any;    
+  current: any;
   request: any;
   date = new Date();
   data_dia: any;
 
   constructor(private weatherService: WeatherService) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
     this.getInfo();
     this.init();
     //this.getDatas();
   }
 
-  getInfo(){
+  getInfo() {
     this.weatherService.getClimaDados().subscribe(
       data => {
-         this.info = data;
-        //this.location = data.location;    
+        this.info = data;
+        //this.location = data.location;
         console.log(this.info);
       }
-    )
+    );
   }
 
-  init(){
+  init() {
     this.info.location = {};
     this.info.current = {};
     this.info.request = {};
-    // this.location = {     
+    // this.location = {
     // }
   }
 
